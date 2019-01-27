@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <link rel=stylesheet type=text/css href="{{url_for('static', filename='style.css')}}">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Edit Gear Item</h1>
+  </div>
+
+  <div class="form">
+    <form action="{{url_for('editGear', activity_id = activity_id, gear_id=item.id)}}" method='POST'>
+
+      <p class="edit-gear-name">Name:</p>
+      <input type='text' size='30' name='name' placeholder='{{item.name}}'>
+      <p class="edit-gear-price">Price:</p>
+      <input type='text' size='30' name='price' placeholder='{{item.price}}'>
+      <p class="edit-gear-description">Description:</p>
+      <input type='text' size='30' name='description'>
+      </br>
+      <button type="submit" class="btn btn-outline-dark edit-gear-btn">Edit</button>
+    </form>
+</body>
+
+</html>

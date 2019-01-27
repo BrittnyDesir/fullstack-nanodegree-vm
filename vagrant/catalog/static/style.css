@@ -1,0 +1,97 @@
+* {
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background-image: url("./backgroundImage.jpg");
+  margin: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a{
+  padding: 5px;
+  display: inline;
+}
+
+.heading {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.activity-name {
+  padding: 10px;
+  margin: 20px;
+  float: left;
+  text-align: center;
+}
+
+.badge {
+  margin: 5px;
+}
+
+.form {
+  margin: auto;
+  text-align: center;
+}
+
+.new-gear-btn {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.gear-item {
+margin-left: 10px;
+}
+
+.edit-gear-price {
+  margin-top: 10px;
+}
+
+.edit-gear-description {
+  margin-top: 10px;
+}
+
+.edit-gear-btn {
+  margin-top: 5px;
+}
+
+.new-gear-price {
+  margin-top: 10px;
+}
+
+.new-gear-description {
+  margin-top: 10px;
+}
+
+.new-gear-btn {
+  margin-top: 5px;
+}
+
+.edit-activity-btn {
+  margin-top: 5px;
+}
+
+.delete-activity-btn {
+  margin-top: 5px;
+}
+
+.create-activity-btn {
+  margin-top: 5px;
+}

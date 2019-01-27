@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <link rel=stylesheet type=text/css href="{{url_for('static', filename='style.css')}}">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="heading">
+    <h2> Are you sure you want to delete {{activity.name}}? </h2>
+  </div>
+
+  <div class="form">
+    <form action="{{ url_for('deleteActivity',activity_id = activity.id)}}" method="post">
+      <button type="submit" id="submit" class="btn btn-outline-dark delete-activity-btn">Delete</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
